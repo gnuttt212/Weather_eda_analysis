@@ -78,3 +78,11 @@ Hệ thống đã tự động kết xuất 12 biểu đồ phân tích chuyên 
 - **Hiện tượng Overfitting:** Random Forest và XGBoost đạt điểm rất cao trên tập Train (R² > 0.93) nhưng lại hoạt động kém trên tập Test. Mô hình dạng cây (Tree-based) gặp khó khăn trong việc dự đoán xu hướng (extrapolation) ngoài khoảng dữ liệu đã học, vốn là rào cản phổ biến khi xử lý Time Series với Temporal Split.
 - **Feature Importance:** Thông qua Random Forest & XGBoost, các biến quan trọng nhất ảnh hưởng tới nhiệt độ ngày mai bao gồm: `Nhiệt độ ngày hôm trước (Temp_Lag1)`, `Chênh lệch nhiệt độ - Điểm sương (DewDepression_C)`, `Áp suất khí quyển (Pressure_mbar)` và `Nhiệt độ trung bình 3 ngày qua (Temp_Roll3)`.
 - **Cải tiến rõ rệt:** So với mô hình đơn giản ban đầu (R² âm), mô hình đa biến có Feature Engineering đã làm chủ bài toán tốt hơn hẳn.
+
+---
+
+## 6. Tài liệu tham khảo
+1. **Visual Crossing Weather API:** Nguồn cung cấp dữ liệu thời tiết lịch sử. (https://www.visualcrossing.com/)
+2. **Scikit-learn Documentation:** Thư viện sử dụng cho các mô hình Hồi quy (Linear, Ridge, Lasso) và Random Forest.
+3. **XGBoost Documentation:** Thư viện sử dụng cho mô hình Extreme Gradient Boosting.
+4. **Pandas, Matplotlib, Seaborn:** Các thư viện chính phục vụ tiền xử lý và trực quan hóa dữ liệu.

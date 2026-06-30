@@ -108,6 +108,12 @@ def main():
     doc.add_paragraph("Feature Importance: Thông qua Random Forest & XGBoost, các biến quan trọng nhất ảnh hưởng tới nhiệt độ ngày mai bao gồm: Nhiệt độ ngày hôm trước (Temp_Lag1), Chênh lệch nhiệt độ - Điểm sương (DewDepression_C), Áp suất khí quyển (Pressure_mbar) và Nhiệt độ trung bình 3 ngày qua (Temp_Roll3).", style='List Bullet')
     doc.add_paragraph("Cải tiến rõ rệt: So với mô hình đơn giản ban đầu (R² âm), mô hình đa biến có Feature Engineering đã làm chủ bài toán tốt hơn hẳn.", style='List Bullet')
     
+    doc.add_heading('6. Tài liệu tham khảo', level=1)
+    doc.add_paragraph("Visual Crossing Weather API: Nguồn cung cấp dữ liệu thời tiết lịch sử. (https://www.visualcrossing.com/)", style='List Number')
+    doc.add_paragraph("Scikit-learn Documentation: Thư viện sử dụng cho các mô hình Hồi quy (Linear, Ridge, Lasso) và Random Forest.", style='List Number')
+    doc.add_paragraph("XGBoost Documentation: Thư viện sử dụng cho mô hình Extreme Gradient Boosting.", style='List Number')
+    doc.add_paragraph("Pandas, Matplotlib, Seaborn: Các thư viện chính phục vụ tiền xử lý và trực quan hóa dữ liệu.", style='List Number')
+    
     doc.save('BaoCao_EDA_ThoiTiet.docx')
     print("Đã tạo báo cáo BaoCao_EDA_ThoiTiet.docx thành công!")
 
